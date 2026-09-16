@@ -28,10 +28,13 @@ Para que o projeto funcione, é necessário o motor **Node.js** e a biblioteca v
 
 ### 🐧 Para Linux / macOS
 Abra o terminal na pasta do projeto e execute o script de configuração:
+
 ```bash
 chmod +x setup.sh
 ./setup.sh
 (Ele verifica o Node.js, tenta instalá-lo automaticamente se estiver faltando via gerenciador de pacotes do sistema e baixa as dependências do projeto).
+```
+
 🪟 Para Windows
 
 Basta dar dois cliques no arquivo setup.bat (ou executá-lo pelo Prompt/PowerShell):
