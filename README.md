@@ -31,3 +31,33 @@ Abra o terminal na pasta do projeto e execute o script de configuração:
 ```bash
 chmod +x setup.sh
 ./setup.sh
+(Ele verifica o Node.js, tenta instalá-lo automaticamente se estiver faltando via gerenciador de pacotes do sistema e baixa as dependências do projeto).
+🪟 Para Windows
+
+Basta dar dois cliques no arquivo setup.bat (ou executá-lo pelo Prompt/PowerShell):
+DOS
+
+setup.bat
+
+(Se o Node.js não estiver instalado na máquina do Windows, o script avisa de forma amigável, abre a página oficial de download para você e prepara o terreno em segundos).
+🕹️ Como Usar no Dia a Dia
+
+    Clone ou jogue os arquivos deste repositório na pasta raiz onde ficam todas as suas pastas de fotos.
+
+    Dê dois cliques ou rode o instalador (setup.sh ou setup.bat) na primeira vez para preparar o ambiente.
+
+    Se suspeitar que tem fotos repetidas espalhadas por aí, rode o faxineiro visual:
+    Bash
+
+    node limpa-duplicatas.js
+
+    (Ele lista os duplicados, pergunta se deseja apagar e preserva uma cópia original).
+
+    Atualize o índice da galeria rodando o gerador:
+    Bash
+
+    node gera-lista.js
+
+    Dê um duplo clique no arquivo index.html e curta sua galeria organizada!
+
+Feito com ☕ e código limpo por Mestre Pupo. Aproveite!
