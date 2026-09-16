@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>galery // universal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div>
+        <header>
+            <div class="header-content">
+                <h1 onclick="voltarParaHome()">galery</h1>
+                <p id="subtituloTopo">Portfólio &bull; Arquivo Geral</p>
+            </div>
+            <div id="buscaContainer" class="busca-wrapper" style="display: none;">
+                <input type="text" id="inputBusca" placeholder="Pesquisar arquivo..." oninput="filtrarPorTexto(this.value)">
+            </div>
+        </header>
+
+        <main>
+            <div id="appContainer"></div>
+        </main>
+    </div>
+
+    <footer class="servidor-status">
+        Galeria Local Ativa &bull; Universal Viewer
+    </footer>
+
+    <!-- Modal Cinematográfico Proporcional -->
+    <div id="modalVisualizacao" class="modal" onclick="fecharModal()">
+        <span class="fechar">&times;</span>
+        
+        <button class="modal-nav-btn btn-prev" onclick="event.stopPropagation(); navegarModal(-1)">&#10094;</button>
+        <button class="modal-nav-btn btn-next" onclick="event.stopPropagation(); navegarModal(1)">&#10095;</button>
+
+        <div class="modal-conteudo" onclick="event.stopPropagation()">
+            <div id="modalMidiaContainer"></div>
+            <div class="modal-footer">
+                <p id="modalTitulo"></p>
+                <span id="modalMeta" class="modal-meta"></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="banco-midias.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
